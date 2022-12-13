@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>What is aj doing?</title>
+    <link rel="stylesheet" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <script src="js/countdown.js"></script>
+    <script>
+        var url = 'https://script.googleusercontent.com/a/macros/funako100year.ed.jp/echo?user_content_key=nZs5j0gd88vOUhUVboV96PYX1_Ynn3oDRAGF-7JjFvpsYJf68LPjbeQoXwquHylVsjdTPIcqaWmYxl4Q8IQJlq3rprUG84VvOJmA1Yb3SEsKFZqtv3DaNYcMrmhZHmUMi80zadyHLKCTu7R-LOLScES4on3qk6YzMJlFwRINjruHSWY4Ny5j_aTY6KB8jFMrDaeIuycCPfdpgW2EwTuFM9Vakco6bRE7m_PLiHaaiXgkITPaD1ajUwlJ13gj4_u_3Ozaivtp1EQkG9VRiHQbdw&lib=M5fGNlg-lTeGw0RVf7DseFvl09tToxyx1';
+        fetch(url)
+            .then(function(data) {
+                return data.json();
+            })
+        var row = document.getElementById('what').innerHTML();
+        row.textContent = json;
+    </script>
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+    <div class="container">
+        <h1>What is aj doing?</h1>
+        <h2>This site shows what "aj" is doing now .
+            <br>
+        </h2>
+        <br>
+        <br>
+        <h1 id="what">
+            <h1>
+    </div>
+</body>
+
+</html>
